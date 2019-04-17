@@ -17,7 +17,7 @@ class Esp32AT(ConanFile):
 
     scm = {
         'type': 'git',
-        'url': 'git@github.com:wsbu/esp32-at.git',
+        'url': 'https://github.com/wsbu/esp32-at.git',
         'revision': 'v' + version
     }
 
