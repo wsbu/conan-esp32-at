@@ -21,8 +21,6 @@ class Esp32AT(ConanFile):
         'revision': 'v' + version
     }
 
-    #exports = 'conanfile.py'
-
     def configure(self):
         del self.settings.compiler.libcxx
         if not self.settings.arch or self.settings.arch not in ['esp32', 'esp8266']:
