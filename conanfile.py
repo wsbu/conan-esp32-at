@@ -13,13 +13,15 @@ class Esp32AT(ConanFile):
     license = 'Proprietary'
     url = 'https://bitbucket.org/redlionstl/esp32-at'
     description = 'AT library for ESP32 ESP-IDF'
-    settings = 'compiler', 'build_type', 'arch'
+    settings = 'compiler', 'arch'
 
     scm = {
         'type': 'git',
         'url': 'https://github.com/wsbu/esp32-at.git',
         'revision': 'v' + version
     }
+
+    #exports = 'conanfile.py'
 
     def configure(self):
         del self.settings.compiler.libcxx
